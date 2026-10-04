@@ -1,32 +1,22 @@
-name: Bug report
-description: Something in Swift Speak isn't working as expected
-title: "[Bug] "
-labels: [bug]
+name: Feature request
+description: An idea to improve voice dictation, or a new feature
+title: "[Feature] "
+labels: [enhancement]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for helping improve Swift Speak!
   - type: textarea
     id: description
     attributes:
-      label: What happened?
-      description: Describe the problem and what you expected to happen.
+      label: What would you like Swift Speak to do?
+      description: Describe the feature and how it would help you dictate.
     validations:
       required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      placeholder: |
-        1. ...
-        2. ...
-        3. ...
   - type: upload
     id: log
     attributes:
-      label: Log file
+      label: Log file (optional)
       description: |
+        Attach it if it helps explain the idea.
+
         The log file `error.log` is in the Swift Speak folder. To upload it:
         1. Copy the folder path:
            ```text
@@ -38,7 +28,7 @@ body:
 
         Or press **Win+R**, paste the path, press **Enter**, and drag `error.log` from the folder that opens into the box below.
     validations:
-      required: true
+      required: false
       accept: ".log,.txt"
   - type: textarea
     id: environment
