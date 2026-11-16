@@ -1,0 +1,10 @@
+# What "New issue" offers: the two forms only (no blank issue, which arrives without the log and the system
+# details), and below them where to go for anything else.
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and answers · שאלות נפוצות
+    url: https://lifeai.ovh/en/swift-speak#faq
+    about: How Swift Speak works, languages, models and privacy. In Hebrew too.
+  - name: Contact us · יצירת קשר
+    url: https://lifeai.ovh/en/contact
+    about: Anything that isn't a bug or an idea, or a commercial license. Or write to contact@lifeai.ovh
