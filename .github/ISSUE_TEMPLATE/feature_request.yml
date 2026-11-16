@@ -1,0 +1,40 @@
+name: Feature request
+description: An idea to improve voice dictation, or a new feature
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like Swift Speak to do?
+      description: Describe the feature and how it would help you dictate.
+    validations:
+      required: true
+  - type: upload
+    id: log
+    attributes:
+      label: Log file (optional)
+      description: |
+        Attach it if it helps explain the idea.
+
+        The log file `error.log` is in the Swift Speak folder. To upload it:
+        1. Copy the folder path:
+           ```text
+           %LOCALAPPDATA%\SwiftSpeak
+           ```
+        2. Click the box below. A file window opens.
+        3. Paste the path into the **File name** field and press **Enter**. The folder opens.
+        4. Select `error.log` and click **Open**.
+
+        Or press **Win+R**, paste the path, press **Enter**, and drag `error.log` from the folder that opens into the box below.
+    validations:
+      required: false
+      accept: ".log,.txt"
+  - type: textarea
+    id: environment
+    attributes:
+      label: System details
+      description: Filled in automatically by the app.
+      render: text
+    validations:
+      required: true
